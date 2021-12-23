@@ -2,6 +2,6 @@
 
 ## Dependencies used
 
-. react-native-navigation
-. apollo-graphql
+#### react-native-navigation
+#### apollo-graphql
 . 
