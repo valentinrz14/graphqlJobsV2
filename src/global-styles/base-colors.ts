@@ -1,5 +1,5 @@
 // Colors
-export const colors = {
+export const Colors = {
   black: '#000',
   white: '#fff',
   whiteSmoke: '#f5f5f5',

@@ -8,15 +8,18 @@ describe('buttonPressable', () => {
     const handleOnPress = jest.fn();
 
     const { toJSON, getByTestId } = render(
-      <ButtonPressable testID="pressable-test-id" onPress={handleOnPress}>
+      <ButtonPressable
+        testID="button-pressable-test-id"
+        onPress={handleOnPress}
+      >
         <Text>ButtonPressable</Text>
       </ButtonPressable>,
     );
 
-    const pressableTestId = getByTestId('pressable-test-id');
-    expect(pressableTestId).toBeDefined();
+    const buttonPressableTestId = getByTestId('button-pressable-test-id');
+    expect(buttonPressableTestId).toBeDefined();
 
-    fireEvent.press(pressableTestId);
+    fireEvent.press(buttonPressableTestId);
     waitFor(() => {
       expect(handleOnPress).toHaveBeenCalledTimes(1);
     });

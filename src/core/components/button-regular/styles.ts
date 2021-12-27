@@ -4,7 +4,7 @@ import { StyleSheet } from 'react-native';
  ** Styles
  */
 
-export const buttonPressableStyles = StyleSheet.create({
+export const buttonRegularStyles = StyleSheet.create({
   wrapper: {
     margin: 5,
   },
