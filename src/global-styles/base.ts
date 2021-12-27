@@ -7,11 +7,13 @@ export const dimensions = {
   fullWidth: width,
 };
 
-export const padding = {
-  sm: 10,
-  md: 20,
-  lg: 30,
-  xl: 40,
+export const SHADOW_OFF_SET = {
+  shadowOffset: {
+    width: 3,
+    height: 3,
+  },
+  shadowOpacity: 0.3,
+  elevation: 5,
 };
 
 const createStyles = (overrides = {}) => {

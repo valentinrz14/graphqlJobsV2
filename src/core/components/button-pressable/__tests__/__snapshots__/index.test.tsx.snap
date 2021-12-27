@@ -20,6 +20,7 @@ exports[`buttonPressable should render buttonPressable 1`] = `
       undefined,
     ]
   }
+  testID="pressable-test-id"
 >
   <Text>
     ButtonPressable

@@ -12,10 +12,11 @@ describe('buttonPressable', () => {
         <Text>ButtonPressable</Text>
       </ButtonPressable>,
     );
-    const pressableTestId = getByTestId('pressable-test-id');
-    expect(pressableTestId).toBeUndefined();
-    fireEvent.press(pressableTestId);
 
+    const pressableTestId = getByTestId('pressable-test-id');
+    expect(pressableTestId).toBeDefined();
+
+    fireEvent.press(pressableTestId);
     waitFor(() => {
       expect(handleOnPress).toHaveBeenCalledTimes(1);
     });

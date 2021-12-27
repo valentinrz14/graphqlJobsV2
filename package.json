@@ -64,6 +64,6 @@
     ]
   },
   "lint-staged": {
-    "*.{ts,tsx}": "tsc; eslint --cache --fix; prettier --write"
+    "*.{ts,tsx}": "tsc; eslint --cache --fix; prettier --write; test --no-cache --no-watchman-update-watch-file"
   }
 }
